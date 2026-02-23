@@ -1,0 +1,10 @@
+{
+  "name": "Arch + Neovim Nightly",
+
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+
+  "remoteUser": "vscode",
+  "postCreateCommand": "bash .devcontainer/scripts/setup.sh"
+}
