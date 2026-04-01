@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios HTML</title>
+</head>
+
+<body>
+    <form action="post">
+        <table border="1">
+            <tbody>
+            <tr>
+                <td><label for="i_name">Nome:</label></td>
+                <td><input type="text" id="i_name"></td>
+            </tr>
+            <tr>
+                <td><label for="i_email_pessoal">E-mail pessoal:</label></td>
+                <td><input type="text" id="i_email_pessoal"></td>
+            </tr>
+            <tr>
+                <td><label for="i_email_patter">E-mail (patter):</label></td>
+                <td><input type="text" id="i_email_patter"></td>
+            </tr>
+            <tr>
+                <td><label for="i_senha">Senha:</label></td>
+                <td><input type="text" id="i_senha"></td>
+            </tr>
+            <tr>
+                <td><label for="i_idade">Idade:</label></td>
+                <td><input type="text" id="i_idade"></td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Deixe um comentário</p>
+                <textarea name="comentario" id="i_comentario"></textarea>
+                </td>
+                <td>
+                    <select name="investimentos" id="i_investimentos">
+                    <option value="poupanca">Poupança</option>
+                    <option value="CDB"></option>
+                    <option value="tesouro_direto">Tesouro Direto</option>
+                    <option value=""></option>
+                    <option value="fundos_imobiliarios">Fundos Imobiliários</option>
+                    <option value="cdi">CDI</option>
+                    <option value="debentures">DEBÊNTURES</option>
+                    <option value=""></option>
+                    <option value="criptomoedas">Criptomoedas</option>
+                    <option value="acoes">Ações</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="backend" value="backend" id="check_backend">
+                    <input type="checkbox" name="frontend" value="frontend" id="check_frontend">
+                    <input type="checkbox" name="fullstack" value="fullstack" id="check_fullstack">
+                </td>
+            </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>
+                        <button>Enviar</button>
+                    </td>
+                    <td>
+                        <button>Limpar</button>
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </form>
+</body>
+
+</html>
