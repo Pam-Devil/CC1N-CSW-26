@@ -9,63 +9,112 @@
 
 <body>
     <form action="post">
-        <table border="1">
+        <table border="1" cellspacing="0">
             <tbody>
-            <tr>
-                <td><label for="i_name">Nome:</label></td>
-                <td><input type="text" id="i_name"></td>
-            </tr>
-            <tr>
-                <td><label for="i_email_pessoal">E-mail pessoal:</label></td>
-                <td><input type="text" id="i_email_pessoal"></td>
-            </tr>
-            <tr>
-                <td><label for="i_email_patter">E-mail (patter):</label></td>
-                <td><input type="text" id="i_email_patter"></td>
-            </tr>
-            <tr>
-                <td><label for="i_senha">Senha:</label></td>
-                <td><input type="text" id="i_senha"></td>
-            </tr>
-            <tr>
-                <td><label for="i_idade">Idade:</label></td>
-                <td><input type="text" id="i_idade"></td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Deixe um comentário</p>
-                <textarea name="comentario" id="i_comentario"></textarea>
-                </td>
-                <td>
-                    <select name="investimentos" id="i_investimentos">
-                    <option value="poupanca">Poupança</option>
-                    <option value="CDB"></option>
-                    <option value="tesouro_direto">Tesouro Direto</option>
-                    <option value=""></option>
-                    <option value="fundos_imobiliarios">Fundos Imobiliários</option>
-                    <option value="cdi">CDI</option>
-                    <option value="debentures">DEBÊNTURES</option>
-                    <option value=""></option>
-                    <option value="criptomoedas">Criptomoedas</option>
-                    <option value="acoes">Ações</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="checkbox" name="backend" value="backend" id="check_backend">
-                    <input type="checkbox" name="frontend" value="frontend" id="check_frontend">
-                    <input type="checkbox" name="fullstack" value="fullstack" id="check_fullstack">
-                </td>
-            </tr>
+                <tr>
+                    <td><label for="i_name">Nome:</label></td>
+                    <td><input type="text" id="i_name"></td>
+                </tr>
+                <tr>
+                    <td><label for="i_email_pessoal">E-mail pessoal:</label></td>
+                    <td><input type="text" id="i_email_pessoal"></td>
+                </tr>
+                <tr>
+                    <td><label for="i_email_patter">E-mail (patter):</label></td>
+                    <td><input type="text" id="i_email_patter"></td>
+                </tr>
+                <tr>
+                    <td><label for="i_senha">Senha:</label></td>
+                    <td><input type="text" id="i_senha"></td>
+                </tr>
+                <tr>
+                    <td><label for="i_idade">Idade:</label></td>
+                    <td><input type="text" id="i_idade"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <p>Deixe um comentário</p>
+                        <textarea name="comentario" id="i_comentario" cols="50" rows="5"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Matéria de interesse:
+                        <br>
+                        <input type="checkbox" name="Backend" id="i_backend">
+                        <label for="i_backend">Backend</label><br>
+                        <input type="checkbox" name="FrontEnd" id="i_frontend">
+                        <label for="i_frotnend">FrontEnd</label><br>
+                        <input type="checkbox" name="FullStack" id="i_fullstack">
+                        <label for="i_fullstack">FullStack</label>
+                    </td>
+                    <td>
+                        Tipo de Viagem:
+                        <br>
+                        <input type="radio" name="viagem" id="i_negocios">
+                        <label for="i_negocios">Negocios</label><br>
+                        <input type="radio" name="viagem" id="i_lazer">
+                        <label for="i_lazer">Lazer</label><br>
+                        <input type="radio" name="viagem" id="i_turismo">
+                        <label for="i_turismo">Turismo</label><br>
+                        <input type="radio" name="viagem" id="i_academico">
+                        <label for="i_academico">Acadêmico</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Esporte Favorito:
+                        <select name="esportes" id="i_select_esportes">
+                            <option value="futebol">Futebol</option>
+                            <option value="basquete">Basquete</option>
+                            <option value="volei">Vôlei</option>
+                            <option value="tenis">Tênis</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select name="investimentos" id="i_investimentos">
+                            <optgroup label="Baixo Risco">
+                                <option value="poupanca">Poupança</option>
+                                <option value="CDB">CDB</option>
+                                <option value="tesouro_direto">Tesouro Direto</option>
+                            </optgroup>
+                            <optgroup label="Medio risco">
+                                <option value="fundos_imobiliarios">Fundos Imobiliários</option>
+                                <option value="cdi">CDI</option>
+                                <option value="debentures">DEBÊNTURES</option>
+                            </optgroup>
+                            <optgroup label="Alto Risco">
+                                <option value="criptomoedas">Criptomoedas</option>
+                                <option value="acoes">Ações</option>
+                                <option value="opcoes">Opções</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Escolha uma cor:
+                        <input type="color" name="color" id="i_color">
+                    </td>
+                    <td>
+                        Selecione um arquivo:
+                        <input type="file" name="file" id="i_file">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        Data e Hora envio:
+                        <input type="datetime-local" name="date-time" id="i_date-time">
+                    </td>
+                </tr>
             </tbody>
             <tfoot>
                 <tr>
                     <td>
-                        <button>Enviar</button>
+                        <button type="submit">Enviar</button>
                     </td>
                     <td>
-                        <button>Limpar</button>
+                        <button type="reset">Limpar</button>
                     </td>
                 </tr>
             </tfoot>
