@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background: lightgrey;
+    letter-spacing: 0.1em;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    --title-font:"Sour Gummy", sans-serif;
+    --paragraph-font:"Funnel Sans", sans-serif;
+}
+
+h1 {
+    background-color: orange;
+    color: white;
+    font-family: var(--title-font);
+}
+
+h2 {
+    color: brown;
+    font-family: var(--title-font);
+}
+
+p {
+    color: blue;
+    font-family: var(--paragraph-font);
+}
+
+a {
+    color: blue;
+}
