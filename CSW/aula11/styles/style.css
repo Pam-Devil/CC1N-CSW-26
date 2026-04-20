@@ -1,0 +1,37 @@
+:root {
+    --color-1: rgba(6, 100, 164);
+    --color-2: rgba(18, 161, 231);
+    --color-3: rgba(5, 177, 191);
+    --color-4: rgba(142, 222, 247);
+    --color-5: rgba(236, 250, 253);
+}
+
+body {
+    margin: 0;
+    padding-top:1em;
+    padding-inline: 33%;
+    background-image: linear-gradient(to right, rgba(6, 100, 164), rgba(5, 177, 191));
+}
+
+main {
+    background-color: white;
+    padding: 2em;
+    border-radius: 1em;
+    box-shadow: 1em 1em 3em rgba(0, 0, 0, 0.705);
+}
+
+h1 {
+    text-align: center;
+    color: var(--color-1);
+}
+
+h2 {
+    color: var(--color-3);
+}
+
+p {
+    text-align: justify;
+}
+
+
+
