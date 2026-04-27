@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    --hi-font: "Poppins",sans-serif;
+    --rg-font: "Orbitron",sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: var(--rg-font)
+}
+
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    inset: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+main {
+    height: 100%;
+}
+
+.bg {
+    height: 100%;
+    width: 100%;
+    background-size:cover;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: scale(1.05);
+    transition: opacity 1s ease, transform 5s ease;
+}
+
+#i_bg1 {z-index: -2;}
+#i_bg2 {z-index: -1; opacity: 0;}
+
+.rain-overlay{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: screen;
+    opacity: 1;
+}
+.rain1 {
+    background-image: url("https://d.l3n.co/cVPc2P.gif");
+    opacity: 1;
+}
+.rain2{
+    background-image: url("https://a.l3n.co/cVcKVA.gif");
+    opacity: 0.5;
+}
+.rain3 {
+    background-image: url("https://d.l3n.co/cVcpnM.gif");
+    background-size: cover;
+    opacity: 0.7;
+}
+.nav-container {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+nav {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 50%;
+    height: 3em;
+    padding-right: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3em;
+}
+
+.google-img {
+    width: 2em;
+    height: 2em;
+    margin-inline: 0.5em;
+}
+
+form {
+    height: 100%;
+    margin: 0;
+    width: 100%;
+    display: flex;
+}
+
+.text-input {
+    width: 100%;
+    height: 100%;
+    font-size: 1.5em;
+    margin-right: 0.5em;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 0px;
+}
+
+.text-input:focus {
+    width: 100%;
+    height: 100%;
+    margin-right: 0.5em;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 0px;
+    outline: none;
+}
